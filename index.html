@@ -1,1 +1,44 @@
-<h1>Waspberry</h1>
+<body><div class="hero">
+  <div class="logo"><div class="logo-icon"></div><p class="logo-waspwordmark">Waspberry<small>™</small> Online</p></div>
+  <p>We are working on bug fixes at the moment. Coming soon!</p>
+</div>
+  <footer>&copy; Waspberry. All rights reserved.</footer>
+<style>
+  /* Logo; The font is maintained under the SIL Open Font License as far as I know.*/
+    @font-face {font-family: "Raleway";
+      src: url("Raleway/Raleway-VariableFont_wght.ttf");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+      .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 300.160px;
+        height: 40px;
+        margin: auto;
+      }
+  
+      .logo-icon {
+        position: relative;
+        background: linear-gradient(135deg, gold 0%, gold 20%, black 20%, black 40%, gold 40%, gold 60%, black 60%, black 80%, gold 80%, gold 100%); display: flex; align-items: center; justify-content: center; transition: 0.11s all ease; border-radius: 50px; cursor: pointer;
+        height: 40px;
+        width: 40px;
+      }
+      .logo-icon::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(ellipse 18px 14px, rgba(255,255,255,0.8211), rgba(0,0,0,0.11)), linear-gradient(to bottom, white 0%, rgba(0,0,0,0.11) 10%, rgba(0,0,0,0.11) 20%, rgba(0,0,0,0.11) 40%, rgba(0,0,0,0.711) 100%); pointer-events: none;
+        z-index: 9999; transition: 0.11s all ease;
+        border-radius: 50px;
+      }
+      
+      .logo-waspwordmark {font-family: "Raleway"; font-size: 20px; color: white; margin-left: 5px;}
+      
+      .logo-waspwordmark small {font-size: 11px;}
+      /*End of logo*/
+  body {background: #F90689; text-align: center; font-family: 'Raleway'; color: white;}
+</style>
+</body>
